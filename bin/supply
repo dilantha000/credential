@@ -46,8 +46,8 @@ aws configure list
 
 echo "AWS ENV VARIABLES:"
 env | grep AWS
-#aws s3api list-objects --bucket ir-ac-test --query 'Contents[].{Key: Key, Size:Size}'
 
+aws s3api list-objects --bucket ir-ac-test --query 'Contents[].{Key: Key, Size:Size}'
 # mkdir -p "dirname" = create sub-directories of a directory
 echo "Create a directory"
 mkdir -p .keystore/prod
