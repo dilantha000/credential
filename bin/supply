@@ -55,8 +55,8 @@ mkdir -p .keystore/prod
 ls -la
 
 # Copy a file from s3 bucket to current working directory
-#aws s3 cp s3://ir-ac-test/797e0155ea604e1d88c215c200f5aa6b.p12 ./.keystore/prod
-#aws s3 cp s3://ir-ac-test/prod01-keystore.jks ./.keystore/prod
+aws s3 cp s3://ir-ac-test/797e0155ea604e1d88c215c200f5aa6b.p12 ./.keystore/prod
+aws s3 cp s3://ir-ac-test/prod01-keystore.jks ./.keystore/prod
 
 ls -la
 ls -r  .keystore/prod
